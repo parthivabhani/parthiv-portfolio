@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parthiv Abhani | AI Automation & Full-Stack Developer</title>
+  <meta name="description" content="Parthiv Abhani builds AI automation systems and full-stack products. IEEE-published, patent-filed, final-year CS (AI & ML) at Symbiosis Institute of Technology, Nagpur." />
+  <meta name="theme-color" content="#F2F1ED" />
+  <meta property="og:title" content="Parthiv Abhani | AI Automation & Full-Stack Developer" />
+  <meta property="og:description" content="I build software that takes the busywork off people's plates." />
+  <meta property="og:image" content="assets/og.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>
+    // Set theme before paint so there's no flash.
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+</head>
+<body>
+  <!-- ============ PRELOADER ============ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__count"><span data-loader-count>000</span></div>
+    <div class="loader__word">Parthiv Abhani<span class="dot">.</span></div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-nav>
+    <a href="#top" class="nav__logo" aria-label="Parthiv Abhani, home">
+      <span class="logo-mark">pa<span class="dot">.</span></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work" data-link><span class="idx">01</span>Work</a>
+      <a href="#about" data-link><span class="idx">02</span>About</a>
+      <a href="#experience" data-link><span class="idx">03</span>Experience</a>
+      <a href="#recognition" data-link><span class="idx">04</span>Recognition</a>
+      <a href="#contact" data-link><span class="idx">05</span>Contact</a>
+    </nav>
+
+    <div class="nav__right">
+      <span class="nav__clock mono" title="My local time"><span class="pulse"></span><span data-clock>--:--</span></span>
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">
+        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+      </button>
+      <a href="assets/Parthiv_Abhani_Resume.pdf" class="btn btn--ink btn--sm" target="_blank" rel="noopener" data-magnetic data-cursor="Open">Résumé <span class="arrow">↗</span></a>
+      <button class="menu-btn" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" data-menu aria-hidden="true">
+    <nav class="menu__links">
+      <a href="#work"><span class="idx">01</span>Work</a>
+      <a href="#about"><span class="idx">02</span>About</a>
+      <a href="#experience"><span class="idx">03</span>Experience</a>
+      <a href="#recognition"><span class="idx">04</span>Recognition</a>
+      <a href="#contact"><span class="idx">05</span>Contact</a>
+    </nav>
+    <div class="menu__foot mono">
+      <a href="mailto:parthiv.abhani@gmail.com">parthiv.abhani@gmail.com</a>
+      <a href="assets/Parthiv_Abhani_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__top mono">
+        <span>Parthiv Abhani</span>
+        <span class="hide-sm">AI Automation · Full-Stack · Product</span>
+        <span>Nagpur, India</span>
+      </div>
+
+      <div class="hero__grid">
+        <div class="hero__intro">
+          <p class="eyebrow mono"><span class="status-dot"></span>Open to internships & full-time roles</p>
+          <h1 class="hero__title" data-split>
+            I build software that takes the <em class="serif">busywork</em> off people’s plates.
+          </h1>
+          <p class="hero__sub reveal">
+            Final-year CS (AI &amp; ML) student at Symbiosis Institute of Technology, Nagpur. I build full-stack products and AI workflows,
+            with production work from two internships, an <a href="https://ieeexplore.ieee.org/document/11496030" target="_blank" rel="noopener" class="ulink">IEEE paper</a> and a filed patent. Now looking for the team I join next.
+          </p>
+          <div class="hero__cta reveal">
+            <a href="#work" class="btn btn--accent" data-magnetic>See selected work <span class="arrow">↓</span></a>
+            <a href="#contact" class="btn btn--ghost" data-magnetic>Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__photo" data-tilt>
+            <div class="hero__block"></div>
+            <img decoding="async" src="assets/me.jpg" alt="Portrait of Parthiv Abhani" width="620" height="720" />
+            <div class="hero__band"></div>
+            <a href="#work" class="hero__arrow" aria-label="Scroll to work" data-cursor="Scroll">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+          <p class="hero__vertical mono">AI Automation<br />&amp; Full-Stack<br />Development</p>
+        </div>
+      </div>
+
+      <div class="hero__meta">
+        <div class="hero__cell"><span class="mono">Currently</span><p>Final-year B.Tech CSE (AI &amp; ML)</p></div>
+        <div class="hero__cell"><span class="mono">Focus</span><p>AI automation &amp; full-stack products</p></div>
+        <div class="hero__cell"><span class="mono">Most recently</span><p>Software Development Intern, Planitt</p></div>
+        <a href="#work" class="hero__cell hero__scroll" data-cursor="Scroll"><span class="mono">Scroll</span><p>Explore the work <span class="hero__scroll-arrow">↓</span></p></a>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-label="Technologies I work with">
+      <div class="marquee__track" data-marquee>
+        <div class="marquee__group">
+          <span>React</span><i>✦</i><span>Next.js</span><i>✦</i><span>TypeScript</span><i>✦</i><span>Node.js</span><i>✦</i><span>Python</span><i>✦</i><span>LLMs &amp; RAG</span><i>✦</i><span>n8n</span><i>✦</i><span>Supabase</span><i>✦</i><span>SwiftUI</span><i>✦</i><span>WhatsApp Cloud API</span><i>✦</i><span>MongoDB</span><i>✦</i><span>Docker</span><i>✦</i>
+        </div>
+        <div class="marquee__group" aria-hidden="true">
+          <span>React</span><i>✦</i><span>Next.js</span><i>✦</i><span>TypeScript</span><i>✦</i><span>Node.js</span><i>✦</i><span>Python</span><i>✦</i><span>LLMs &amp; RAG</span><i>✦</i><span>n8n</span><i>✦</i><span>Supabase</span><i>✦</i><span>SwiftUI</span><i>✦</i><span>WhatsApp Cloud API</span><i>✦</i><span>MongoDB</span><i>✦</i><span>Docker</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ NUMBERS ============ -->
+    <section class="numbers container">
+      <a class="num reveal" href="https://ieeexplore.ieee.org/document/11496030" target="_blank" rel="noopener" data-cursor="Read">
+        <span class="num__value"><span data-scramble>IEEE</span></span>
+        <span class="num__label">Published research<br /><small>ESIC 2026 · IEEE Xplore ↗</small></span>
+      </a>
+      <div class="num reveal">
+        <span class="num__value"><span data-scramble>Patent</span></span>
+        <span class="num__label">Named inventor<br /><small>KnowBit · Indian patent application</small></span>
+      </div>
+      <div class="num reveal">
+        <span class="num__value"><span data-count="1">0</span><sup>st</sup></span>
+        <span class="num__label">Swalambh 2.0 Hackathon<br /><small>out of 80+ teams</small></span>
+      </div>
+      <div class="num reveal">
+        <span class="num__value">Top <span data-count="2">0</span>%</span>
+        <span class="num__label">of my cohort<br /><small>Merit scholarship · CGPA 8.54</small></span>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="work" id="work">
+      <div class="section-head container">
+        <span class="section-head__idx mono">(01)</span>
+        <h2 class="section-head__title" data-split>Selected <em class="serif">work</em></h2>
+        <p class="section-head__note reveal">Things I’ve designed and built in internships, for research, and on my own because the problem wouldn’t leave me alone.</p>
+      </div>
+
+      <div class="stack container" data-stack>
+
+        <!-- 01 Waitless -->
+        <article class="project theme-ink" data-project style="--i:0">
+          <div class="project__tab mono"><span>✦</span> Project 01</div>
+          <div class="project__inner">
+            <div class="project__info">
+              <p class="project__meta mono"><span class="status-dot"></span>2026 · iOS app · Coming soon to the App Store</p>
+              <h3 class="project__title">Waitless</h3>
+              <p class="project__lede">The best thing to do with your next three minutes, already picked for you.</p>
+              <ul class="project__points">
+                <li>A calm alternative to idle scrolling: bite-size ideas, a daily puzzle and quick games, sized to 1, 3 or 5 minutes.</li>
+                <li>Wrote the product spec and design principles, then built it natively with interactive Home &amp; Lock Screen widgets.</li>
+                <li>680+ ideas across 16 topics and 16 games. No account, no ads, no tracking. Everything stays on the device.</li>
+              </ul>
+              <div class="tags"><span>Swift</span><span>SwiftUI</span><span>WidgetKit</span><span>Product design</span></div>
+              <div class="project__links">
+                <a href="https://waitless-site.vercel.app" target="_blank" rel="noopener" class="link-arrow" data-cursor="Visit">Visit site <span>↗</span></a>
+              </div>
+            </div>
+            <a class="project__media" href="https://waitless-site.vercel.app" target="_blank" rel="noopener" data-cursor="Visit" tabindex="-1">
+              <span class="tape tape--tl"></span><span class="tape tape--br"></span>
+              <div class="browser"><div class="browser__bar"><i></i><i></i><i></i><span>waitless-site.vercel.app</span></div><img decoding="async" src="assets/work/waitless.jpg" alt="Waitless landing page" loading="lazy" width="1440" height="900" /></div>
+            </a>
+          </div>
+        </article>
+
+        <!-- 02 Cropify -->
+        <article class="project theme-paper" data-project style="--i:1">
+          <div class="project__tab mono"><span>✦</span> Project 02</div>
+          <div class="project__inner">
+            <div class="project__info">
+              <p class="project__meta mono">2026 · AgriTech · Research platform</p>
+              <h3 class="project__title">Cropify</h3>
+              <p class="project__lede">A living digital twin of the farm that checks every AI suggestion against agronomy rules before it reaches a farmer.</p>
+              <ul class="project__points">
+                <li>Streams moisture, temperature, pH, EC and N-P-K from a 7-in-1 Modbus RS485 soil probe.</li>
+                <li>Computer vision scores leaf photos for blight, septoria and leaf miner across multiple crops.</li>
+                <li>A neuro-symbolic layer re-weights model confidence and vetoes unsafe actions, with an explainable trace for each decision.</li>
+              </ul>
+              <div class="tags"><span>TanStack Start</span><span>React 19</span><span>Computer vision</span><span>IoT</span><span>Leaflet</span></div>
+              <div class="project__links">
+                <a href="https://getcropify.vercel.app/" target="_blank" rel="noopener" class="link-arrow" data-cursor="Visit">Live site <span>↗</span></a>
+                <a href="https://github.com/parthivabhani/Cropify" target="_blank" rel="noopener" class="link-arrow" data-cursor="Code">Code <span>↗</span></a>
+              </div>
+            </div>
+            <a class="project__media" href="https://getcropify.vercel.app/" target="_blank" rel="noopener" data-cursor="Visit" tabindex="-1">
+              <span class="tape tape--tr"></span>
+              <div class="browser"><div class="browser__bar"><i></i><i></i><i></i><span>getcropify.vercel.app</span></div><img decoding="async" src="assets/work/cropify.jpg" alt="Cropify landing page" loading="lazy" width="1440" height="900" /></div>
+            </a>
+          </div>
+        </article>
+
+        <!-- 03 Auto Mailer Pro -->
+        <article class="project theme-accent" data-project style="--i:2">
+          <div class="project__tab mono"><span>✦</span> Project 03</div>
+          <div class="project__inner">
+            <div class="project__info">
+              <p class="project__meta mono">2026 · Built at Planitt Solutions · SaaS</p>
+              <h3 class="project__title">Auto Mailer Pro</h3>
+              <p class="project__lede">An AI email campaign platform that scales outreach without losing the human touch.</p>
+              <ul class="project__points">
+                <li>Multi-tenant role-based access with separate Super Admin, Admin and Sender dashboards.</li>
+                <li>Groq-powered lead segmentation, personalised copy, tone humaniser and subject-line suggestions.</li>
+                <li>Secure SMTP delivery engine: AES-256-CBC encrypted credentials, de-duplication and real-time audit logs.</li>
+              </ul>
+              <div class="tags"><span>TanStack Start</span><span>Express</span><span>TypeScript</span><span>Supabase</span><span>Groq</span></div>
+              <div class="project__links">
+                <a href="https://auto-mailer-gamma.vercel.app/" target="_blank" rel="noopener" class="link-arrow" data-cursor="Visit">Live site <span>↗</span></a>
+                <a href="https://github.com/parthivabhani/AutoMailer" target="_blank" rel="noopener" class="link-arrow" data-cursor="Code">Code <span>↗</span></a>
+              </div>
+            </div>
+            <a class="project__media" href="https://auto-mailer-gamma.vercel.app/" target="_blank" rel="noopener" data-cursor="Visit" tabindex="-1">
+              <span class="tape tape--tl"></span>
+              <div class="browser"><div class="browser__bar"><i></i><i></i><i></i><span>auto-mailer-gamma.vercel.app</span></div><img decoding="async" src="assets/work/automailer.jpg" alt="Auto Mailer Pro landing page" loading="lazy" width="1440" height="900" /></div>
+            </a>
+          </div>
+        </article>
+
+        <!-- 04 KnowBit -->
+        <article class="project theme-ink" data-project style="--i:3">
+          <div class="project__tab mono"><span>✦</span> Project 04</div>
+          <div class="project__inner">
+            <div class="project__info">
+              <p class="project__meta mono">2025–26 · EdTech · <b>Patent filed</b> · <b>IEEE published</b></p>
+              <h3 class="project__title">KnowBit</h3>
+              <p class="project__lede">Type any topic, get a structured five-day mini-course built for you.</p>
+              <ul class="project__points">
+                <li>Generates daily goals, key concepts and practice plans, with curated resources and recommendations.</li>
+                <li>One-click PDF export so learners can take the course offline.</li>
+                <li>The research behind it became an IEEE Xplore paper on adaptive microlearning and an Indian patent application.</li>
+              </ul>
+              <div class="tags"><span>React</span><span>Node.js</span><span>Gemini AI</span><span>NLP</span><span>jsPDF</span></div>
+              <div class="project__links">
+                <a href="https://knowbit-frontend.vercel.app/" target="_blank" rel="noopener" class="link-arrow" data-cursor="Visit">Live site <span>↗</span></a>
+                <a href="https://ieeexplore.ieee.org/document/11496030" target="_blank" rel="noopener" class="link-arrow" data-cursor="Read">Paper <span>↗</span></a>
+              </div>
+            </div>
+            <a class="project__media" href="https://knowbit-frontend.vercel.app/" target="_blank" rel="noopener" data-cursor="Visit" tabindex="-1">
+              <span class="tape tape--tr"></span><span class="tape tape--bl"></span>
+              <div class="browser"><div class="browser__bar"><i></i><i></i><i></i><span>knowbit-frontend.vercel.app</span></div><img decoding="async" src="assets/work/knowbit.jpg" alt="KnowBit landing page" loading="lazy" width="1440" height="900" /></div>
+            </a>
+          </div>
+        </article>
+
+        <!-- 05 MoneyMind -->
+        <article class="project theme-paper" data-project style="--i:4">
+          <div class="project__tab mono"><span>✦</span> Project 05</div>
+          <div class="project__inner">
+            <div class="project__info">
+              <p class="project__meta mono">2026 · FinTech · Decision support</p>
+              <h3 class="project__title">MoneyMind AI</h3>
+              <p class="project__lede">Financial intelligence for small businesses that can’t afford a CFO.</p>
+              <ul class="project__points">
+                <li>30/60/90-day cash-flow forecasts using linear regression and Random Forest, validated with walk-forward cross-validation.</li>
+                <li>Automatic expense classification, anomaly detection and a composite Financial Health Score.</li>
+                <li>Explainable recommendations, so owners see why the model says what it says.</li>
+              </ul>
+              <div class="tags"><span>React</span><span>TypeScript</span><span>Recharts</span><span>Express</span><span>Python ML</span></div>
+              <div class="project__links">
+                <a href="https://moneymind-ai-azure.vercel.app/" target="_blank" rel="noopener" class="link-arrow" data-cursor="Visit">Live demo <span>↗</span></a>
+                <a href="https://github.com/parthivabhani/Moneymind-AI_v2" target="_blank" rel="noopener" class="link-arrow" data-cursor="Code">Code <span>↗</span></a>
+              </div>
+            </div>
+            <a class="project__media" href="https://moneymind-ai-azure.vercel.app/" target="_blank" rel="noopener" data-cursor="Visit" tabindex="-1">
+              <span class="tape tape--tl"></span>
+              <div class="browser"><div class="browser__bar"><i></i><i></i><i></i><span>moneymind-ai-azure.vercel.app</span></div><img decoding="async" src="assets/work/moneymind.jpg" alt="MoneyMind AI landing page" loading="lazy" width="1440" height="900" /></div>
+            </a>
+          </div>
+        </article>
+
+        <!-- 06 Kommunity -->
+        <article class="project theme-accent" data-project style="--i:5">
+          <div class="project__tab mono"><span>✦</span> Project 06</div>
+          <div class="project__inner">
+            <div class="project__info">
+              <p class="project__meta mono">2025 · Full-stack · Community</p>
+              <h3 class="project__title">Kommunity</h3>
+              <p class="project__lede">A community event planner for discovering, creating and managing local events.</p>
+              <ul class="project__points">
+                <li>End-to-end MERN build: REST API, JWT authentication and a responsive React front end.</li>
+                <li>Organisers create and manage events; members search by name or location and see what’s coming up.</li>
+              </ul>
+              <div class="tags"><span>React</span><span>Vite</span><span>Express</span><span>MongoDB</span><span>JWT</span></div>
+              <div class="project__links">
+                <a href="https://kommunity-event.vercel.app" target="_blank" rel="noopener" class="link-arrow" data-cursor="Visit">Live site <span>↗</span></a>
+                <a href="https://github.com/parthivabhani/KommunityEvent" target="_blank" rel="noopener" class="link-arrow" data-cursor="Code">Code <span>↗</span></a>
+              </div>
+            </div>
+            <a class="project__media" href="https://kommunity-event.vercel.app" target="_blank" rel="noopener" data-cursor="Visit" tabindex="-1">
+              <span class="tape tape--tr"></span>
+              <div class="browser"><div class="browser__bar"><i></i><i></i><i></i><span>kommunity-event.vercel.app</span></div><img decoding="async" src="assets/work/kommunity.jpg" alt="Kommunity landing page" loading="lazy" width="1440" height="900" /></div>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- More work -->
+      <div class="more container">
+        <div class="more__head">
+          <h3 class="more__title reveal">More things I’ve built</h3>
+          <a href="https://github.com/parthivabhani" target="_blank" rel="noopener" class="link-arrow reveal" data-cursor="GitHub">All on GitHub <span>↗</span></a>
+        </div>
+        <ul class="list" data-preview-list>
+          <li class="reveal"><a href="https://tieout-live.vercel.app" target="_blank" rel="noopener" data-preview="assets/work/tieout.jpg" data-cursor="Visit">
+            <span class="list__no mono">07</span><span class="list__name">Tieout</span><span class="list__desc">Rebuilds an ecommerce seller’s true P&amp;L from Shopify, Stripe, bank and ad data for acquisition due diligence.</span><span class="list__tag mono">Next.js · TS</span><span class="list__arrow">↗</span></a></li>
+          <li class="reveal"><a href="https://parthiv-document-intake-assistant.vercel.app/" target="_blank" rel="noopener" data-preview="assets/work/intake.jpg" data-cursor="Visit">
+            <span class="list__no mono">08</span><span class="list__name">Document Intake Assistant</span><span class="list__desc">Turns a chat into a validated record and a draft PDF. The LLM proposes, deterministic code decides. 138 tests.</span><span class="list__tag mono">Next.js · Zod</span><span class="list__arrow">↗</span></a></li>
+          <li class="reveal"><a href="https://evolveaistudio.vercel.app/" target="_blank" rel="noopener" data-preview="assets/work/evolve.jpg" data-cursor="Visit">
+            <span class="list__no mono">09</span><span class="list__name">WhatsApp Clinic Assistant</span><span class="list__desc">Prototype multilingual WhatsApp assistant that answers clinic enquiries, remembers context and confirms appointments.</span><span class="list__tag mono">n8n · Meta API</span><span class="list__arrow">↗</span></a></li>
+          <li class="reveal"><a href="https://edu-predict-ai-three.vercel.app" target="_blank" rel="noopener" data-preview="assets/work/edupredict.jpg" data-cursor="Visit">
+            <span class="list__no mono">10</span><span class="list__name">EduPredict AI</span><span class="list__desc">Dual-horizon ML early-warning system that flags academic risk before final grades land.</span><span class="list__tag mono">Python · ML</span><span class="list__arrow">↗</span></a></li>
+          <li class="reveal"><a href="https://student-placement-predictor.vercel.app" target="_blank" rel="noopener" data-preview="assets/work/placement.jpg" data-cursor="Visit">
+            <span class="list__no mono">11</span><span class="list__name">PlaceIQ</span><span class="list__desc">Interactive KNN model that predicts student placement outcomes, with live visualisations.</span><span class="list__tag mono">KNN · React</span><span class="list__arrow">↗</span></a></li>
+        </ul>
+        <div class="preview" data-preview-box aria-hidden="true"><img alt="" /></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about container" id="about">
+      <div class="section-head section-head--inline">
+        <span class="section-head__idx mono">(02)</span>
+        <h2 class="section-head__title" data-split>About <em class="serif">me</em></h2>
+      </div>
+
+      <div class="about__grid">
+        <figure class="polaroid reveal" data-tilt>
+          <span class="tape tape--tl"></span><span class="tape tape--tr"></span>
+          <img decoding="async" src="assets/me-casual.jpg" alt="Parthiv Abhani, off duty" loading="lazy" width="750" height="1000" />
+          <figcaption class="mono">Nagpur · ’26</figcaption>
+        </figure>
+
+        <div class="about__text">
+          <p class="about__lead reveal">
+            Hi, I’m Parthiv. I like working where <em class="serif">technology meets business</em>: understanding a messy problem, designing the fix, then building and testing it until it holds up.
+          </p>
+          <p class="reveal">
+            I’m in my final year of a B.Tech (Honors) in Computer Science with an AI &amp; ML specialisation at Symbiosis Institute of Technology, Nagpur. Outside class I’ve interned as a software and web developer, and I spend most evenings prototyping AI automations (WhatsApp assistants, n8n workflows and LLM tools) to see how far they can take real business problems.
+          </p>
+          <p class="reveal">
+            I’m most interested in enterprise technology, AI-powered products and technology consulting: the work where technical thinking and clear communication matter equally. I pick up unfamiliar tools quickly and I care about shipping things that work, not just demos.
+          </p>
+
+          <div class="now reveal">
+            <p class="now__label mono">Right now</p>
+            <ul>
+              <li><span class="now__k mono">Looking for</span>Internships &amp; full-time roles in software and AI</li>
+              <li><span class="now__k mono">Shipping</span>Waitless to the App Store</li>
+              <li><span class="now__k mono">Studying</span>Final year, B.Tech CSE (AI &amp; ML) · CGPA 8.54</li>
+              <li><span class="now__k mono">Speaking</span>English, Hindi, Gujarati, a little French</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="experience container" id="experience">
+      <div class="section-head section-head--inline">
+        <span class="section-head__idx mono">(03)</span>
+        <h2 class="section-head__title" data-split>Experience</h2>
+      </div>
+
+      <div class="xp" data-accordion>
+        <div class="xp__item reveal is-open">
+          <button class="xp__head" aria-expanded="true">
+            <span class="xp__date mono">May – Jun 2026</span>
+            <span class="xp__role">Software Development Intern</span>
+            <span class="xp__org">Planitt Solutions</span>
+            <span class="xp__plus" aria-hidden="true"></span>
+          </button>
+          <div class="xp__body"><div>
+            <ul>
+              <li>Built Auto Mailer Pro, an AI-assisted email campaign platform, with TanStack Start, Express and Supabase.</li>
+              <li>Implemented multi-tenant role-based access control with per-tenant dashboards.</li>
+              <li>Integrated the Groq API for automated lead segmentation and built a secure SMTP engine using AES-256-CBC encryption.</li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="xp__item reveal">
+          <button class="xp__head" aria-expanded="false">
+            <span class="xp__date mono">Jan 2026 – Now</span>
+            <span class="xp__role">AI Automation Developer</span>
+            <span class="xp__org">Evolve AI Studio · Independent project</span>
+            <span class="xp__plus" aria-hidden="true"></span>
+          </button>
+          <div class="xp__body"><div>
+            <p>A self-directed project where I prototype AI automations for common small-business problems.</p>
+            <ul>
+              <li>Designed and built AI workflow automation demos with n8n, LLM APIs and the WhatsApp Cloud API.</li>
+              <li>Ran discovery conversations with local business owners to validate use cases and gather feedback on the prototypes.</li>
+              <li>Built a multilingual WhatsApp clinic assistant prototype with session memory, appointment confirmations and reminders, across 5+ connected workflows.</li>
+            </ul>
+            <a href="https://evolveaistudio.vercel.app/" target="_blank" rel="noopener" class="link-arrow">evolveaistudio.vercel.app <span>↗</span></a>
+          </div></div>
+        </div>
+
+        <div class="xp__item reveal">
+          <button class="xp__head" aria-expanded="false">
+            <span class="xp__date mono">May – Jun 2025</span>
+            <span class="xp__role">Web Development Intern</span>
+            <span class="xp__org">Mequen Medisystem</span>
+            <span class="xp__plus" aria-hidden="true"></span>
+          </button>
+          <div class="xp__body"><div>
+            <ul>
+              <li>Sole designer and developer of a responsive product landing page for a hospital-focused medical system, in React, Tailwind CSS and Vite.</li>
+              <li>Owned UI/UX decisions, built modular reusable components, and handled testing through to a production-ready launch.</li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="xp__item reveal">
+          <button class="xp__head" aria-expanded="false">
+            <span class="xp__date mono">Dec 2022 – Feb 2023</span>
+            <span class="xp__role">Content Writing Intern</span>
+            <span class="xp__org">TheQna.Org</span>
+            <span class="xp__plus" aria-hidden="true"></span>
+          </button>
+          <div class="xp__body"><div>
+            <ul>
+              <li>Researched and wrote articles, reviews and guides for a global audience.</li>
+              <li>Applied on-page SEO (keyword research, meta descriptions, internal linking) to grow organic traffic.</li>
+            </ul>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RECOGNITION ============ -->
+    <section class="recognition container" id="recognition">
+      <div class="section-head section-head--inline">
+        <span class="section-head__idx mono">(04)</span>
+        <h2 class="section-head__title" data-split>Recognition</h2>
+      </div>
+
+      <div class="bento">
+        <a class="card card--wide card--ink reveal" href="https://ieeexplore.ieee.org/document/11496030" target="_blank" rel="noopener" data-cursor="Read">
+          <span class="card__kicker mono">Publication · IEEE Xplore · ESIC 2026</span>
+          <p class="card__quote">“An Automated and Personalized Microlearning for Adaptive Self-Learning Environments Using Gemini-AI and NLP”</p>
+          <span class="card__foot mono">Co-author <span class="arrow">↗</span></span>
+        </a>
+
+        <div class="card card--accent reveal">
+          <span class="card__kicker mono">Patent application</span>
+          <p class="card__big">KnowBit</p>
+          <span class="card__foot mono">Named inventor · App. No. 202621010558 A</span>
+        </div>
+
+        <div class="card reveal">
+          <span class="card__kicker mono">Hackathon · 1st place</span>
+          <p class="card__big">₹50,000</p>
+          <span class="card__foot">Swalambh 2.0, SVPCET Nagpur. A 24-hour national hackathon, 80+ teams.</span>
+        </div>
+
+        <div class="card reveal">
+          <span class="card__kicker mono">Hackathon · 3rd place</span>
+          <p class="card__big">The Sandbox</p>
+          <span class="card__foot">GHRCEM Nagpur. An 8-hour hackathon, 35+ teams.</span>
+        </div>
+
+        <div class="card reveal">
+          <span class="card__kicker mono">Merit scholarship</span>
+          <p class="card__big">Top 2%</p>
+          <span class="card__foot">Semester 5, for academic performance across the cohort.</span>
+        </div>
+
+        <div class="card card--wide reveal">
+          <span class="card__kicker mono">Leadership</span>
+          <ul class="card__list">
+            <li><b>Co-Coordinator, Data Cyclone Club</b><span>Led SITNovate 2.0, a national 24-hour hackathon, handling operations, sponsorships and logistics for 100+ students.</span></li>
+            <li><b>Secretary, CSI Student Chapter</b><span>Ran day-to-day operations and technical events; session chair volunteer at ICSIT Conference 1.0.</span></li>
+            <li><b>Class Representative</b><span>Batch 2023–27, two academic years.</span></li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <span class="card__kicker mono">Certifications</span>
+          <div class="chips">
+            <span>ServiceNow CSA</span><span>ServiceNow CAD</span><span>Red Hat RH124</span><span>Red Hat DO457</span><span>Google Ads</span><span>Entrepreneurship Foundations</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOOLBOX ============ -->
+    <section class="toolbox container">
+      <div class="section-head section-head--inline">
+        <span class="section-head__idx mono">(05)</span>
+        <h2 class="section-head__title" data-split>Toolbox</h2>
+      </div>
+      <div class="tools">
+        <div class="tools__col reveal"><p class="mono">Languages</p><ul><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>Swift</li><li>C · R · Java</li></ul></div>
+        <div class="tools__col reveal"><p class="mono">Frontend</p><ul><li>React</li><li>Next.js</li><li>TanStack Start</li><li>Tailwind CSS</li><li>SwiftUI</li></ul></div>
+        <div class="tools__col reveal"><p class="mono">Backend &amp; Data</p><ul><li>Node.js · Express</li><li>Supabase</li><li>MongoDB Atlas</li><li>REST APIs</li><li>Power BI</li></ul></div>
+        <div class="tools__col reveal"><p class="mono">AI &amp; Automation</p><ul><li>LLM APIs · Prompting</li><li>RAG</li><li>n8n · Zapier · Make</li><li>WhatsApp Cloud API</li><li>scikit-learn</li></ul></div>
+        <div class="tools__col reveal"><p class="mono">Ship it</p><ul><li>Git · GitHub</li><li>Docker</li><li>Vercel · Render</li><li>Railway</li><li>Postman</li></ul></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <span class="section-head__idx mono">(06) Contact</span>
+        <h2 class="contact__title" data-split>Have a problem worth <em class="serif">solving?</em></h2>
+        <p class="contact__sub reveal">I’m looking for internships and full-time roles in software engineering and AI. The fastest way to reach me is email. I read everything.</p>
+
+        <button class="contact__email reveal" data-copy="parthiv.abhani@gmail.com" data-cursor="Copy">
+          <span>parthiv.abhani@gmail.com</span>
+          <span class="contact__copy mono">Click to copy</span>
+        </button>
+
+        <div class="contact__links reveal">
+          <a href="https://www.linkedin.com/in/parthiv-abhani-b47055231" target="_blank" rel="noopener" class="pill" data-magnetic>LinkedIn ↗</a>
+          <a href="https://github.com/parthivabhani" target="_blank" rel="noopener" class="pill" data-magnetic>GitHub ↗</a>
+          <a href="assets/Parthiv_Abhani_Resume.pdf" target="_blank" rel="noopener" class="pill pill--accent" data-magnetic>Résumé (PDF) ↗</a>
+        </div>
+      </div>
+
+      <footer class="footer container mono">
+        <span>© 2026 Parthiv Abhani</span>
+        <a href="#top" class="footer__top">Back to top ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <div class="toast mono" role="status" aria-live="polite" data-toast></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
