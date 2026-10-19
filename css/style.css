@@ -666,6 +666,7 @@ section { position: relative; }
 }
 .card:hover { transform: translateY(-4px); box-shadow: 0 30px 50px -30px rgba(0,0,0,0.3); }
 .card--wide { grid-column: span 2; }
+.card:has(.card__list), .card:has(.chips) { justify-content: flex-start; }
 .card--ink { background: var(--c-ink-bg); color: var(--c-ink-fg); border-color: transparent; }
 .card--ink .card__kicker { color: var(--accent); }
 .card--accent { background: var(--accent); color: #121211; border-color: transparent; }
@@ -684,6 +685,11 @@ section { position: relative; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chips span { padding: 9px 16px; border-radius: 999px; border: 1px solid var(--line); font-size: 15px; transition: background-color 0.3s, color 0.3s, transform 0.4s var(--ease); }
 .chips span:hover { background: var(--ink); color: var(--bg); transform: translateY(-2px); }
+.chips .pro { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); font-weight: 500; }
+.chips--sm { margin-top: 10px; gap: 6px; }
+.chips--sm span { padding: 6px 12px; font-size: 13px; color: var(--ink-2); }
+.chips--sm i { font-style: normal; font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-3); margin-right: 7px; transition: color 0.3s; }
+.chips--sm span:hover i { color: var(--accent); }
 @media (max-width: 960px) {
   .bento { grid-template-columns: 1fr 1fr; }
   .card--wide { grid-column: span 2; }
