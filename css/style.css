@@ -154,15 +154,21 @@ h1, h2, h3, p { margin: 0; }
 .link-arrow span { transition: transform 0.4s var(--ease); }
 .link-arrow:hover span { transform: translate(2px, -2px); }
 
+/* The ring is its own layer and only animates transform/opacity, so it never repaints its parent. */
 .status-dot {
+  position: relative;
   display: inline-block; width: 8px; height: 8px; border-radius: 50%;
   background: #2fbf71; margin-right: 8px; vertical-align: 1px;
-  box-shadow: 0 0 0 0 rgba(47, 191, 113, 0.6);
+}
+.status-dot::after {
+  content: ""; position: absolute; inset: 0; border-radius: 50%;
+  background: rgba(47, 191, 113, 0.55);
+  will-change: transform, opacity;
   animation: ping 2.2s infinite;
 }
 @keyframes ping {
-  0% { box-shadow: 0 0 0 0 rgba(47, 191, 113, 0.55); }
-  70%, 100% { box-shadow: 0 0 0 8px rgba(47, 191, 113, 0); }
+  0% { transform: scale(1); opacity: 1; }
+  70%, 100% { transform: scale(3); opacity: 0; }
 }
 
 /* ============ Preloader ============ */
@@ -491,7 +497,7 @@ section { position: relative; }
   overflow: hidden;
   box-shadow: 0 -1px 0 rgba(0,0,0,0.02), 0 30px 60px -30px rgba(0,0,0,0.25);
 }
-.project__shade { position: absolute; inset: 0; background: #000; opacity: 0; pointer-events: none; border-radius: inherit; z-index: 3; }
+.project__shade { position: absolute; inset: 0; background: #000; opacity: 0; pointer-events: none; border-radius: inherit; z-index: 3; will-change: opacity; }
 
 .theme-ink { --card-bg: var(--c-ink-bg); --card-fg: var(--c-ink-fg); --card-mute: var(--c-ink-mute); --card-accent: var(--accent); --card-line: rgba(255,255,255,0.14); }
 .theme-paper { --card-bg: var(--surface); --card-fg: var(--ink); --card-mute: var(--ink-2); --card-accent: var(--accent); --card-line: var(--line); }
@@ -527,7 +533,7 @@ section { position: relative; }
 .browser img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; transition: transform 1.2s var(--ease); }
 .project__media:hover .browser img { transform: scale(1.03); }
 
-.tape { position: absolute; width: 92px; height: 26px; background: var(--tape); z-index: 2; box-shadow: 0 1px 2px rgba(0,0,0,0.08); backdrop-filter: blur(1px); }
+.tape { position: absolute; width: 92px; height: 26px; background: var(--tape); z-index: 2; box-shadow: 0 1px 2px rgba(0,0,0,0.08); }
 .tape::before, .tape::after { content: ""; position: absolute; top: 0; bottom: 0; width: 6px; background: inherit; }
 .tape--tl { top: -10px; left: -22px; transform: rotate(-32deg); }
 .tape--tr { top: -10px; right: -22px; transform: rotate(32deg); }
@@ -550,14 +556,19 @@ section { position: relative; }
   position: relative;
   display: grid; grid-template-columns: 56px minmax(180px, 1.1fr) 2fr 140px 28px; gap: 20px; align-items: center;
   padding: 24px 0;
-  transition: padding 0.5s var(--ease), color 0.3s;
+  transition: color 0.3s;
 }
 .list a::before {
   content: ""; position: absolute; inset: 0; background: var(--ink); z-index: -1;
   transform: scaleY(0); transform-origin: 50% 100%;
   transition: transform 0.5s var(--ease);
 }
-.list a:hover { color: var(--bg); padding-inline: 20px; }
+.list a:hover { color: var(--bg); }
+/* Slide the row contents with transform instead of padding, so hovering during scroll never triggers layout. */
+.list a > span { transition: transform 0.5s var(--ease), color 0.3s; }
+.list a:hover > .list__no, .list a:hover > .list__name, .list a:hover > .list__desc { transform: translateX(20px); }
+.list a:hover > .list__tag { transform: translateX(-12px); }
+.list a:hover > .list__arrow { transform: translate(-14px, -3px); }
 .list a:hover::before { transform: scaleY(1); }
 .list li { position: relative; isolation: isolate; }
 .list__no { color: var(--ink-3); }
@@ -566,7 +577,7 @@ section { position: relative; }
 .list a:hover .list__desc, .list a:hover .list__no { color: color-mix(in srgb, var(--bg) 70%, transparent); }
 .list__tag { color: var(--ink-3); text-align: right; }
 .list__arrow { font-size: 20px; transition: transform 0.4s var(--ease), color 0.3s; }
-.list a:hover .list__arrow { transform: translate(3px, -3px); color: var(--accent); }
+.list a:hover .list__arrow { color: var(--accent); }
 @media (max-width: 860px) {
   .list a { grid-template-columns: 36px 1fr 24px; row-gap: 6px; }
   .list__desc { grid-column: 2 / 3; grid-row: 2; }

@@ -30,7 +30,7 @@ My personal portfolio: selected projects, experience, research and contact detai
 | **Hero** | Intro, availability, quick facts (current study, focus, most recent role) |
 | **Highlights** | IEEE publication, patent application, hackathon win, top 2% merit scholarship |
 | **Selected work** | Waitless, Document Intake Assistant, Cropify, Tieout, Auto Mailer Pro, MoneyMind AI, Kommunity, KnowBit, shown as stacking cards with live screenshots |
-| **More work** | MediGist, Mequen Medisystem landing page, WhatsApp Clinic Assistant, EduPredict AI, PlaceIQ |
+| **More work** | WhatsApp Clinic Assistant, EduPredict AI, PlaceIQ, MediGist, Mequen Medisystem landing page |
 | **About** | Background and what I'm doing right now |
 | **Experience** | Internships and independent work as an expandable timeline |
 | **Recognition** | Publication, patent, hackathons, leadership, certifications |
