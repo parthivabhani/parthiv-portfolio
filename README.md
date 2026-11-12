@@ -28,12 +28,12 @@ My personal portfolio: selected projects, experience, research and contact detai
 | Section | Contents |
 |---|---|
 | **Hero** | Intro, availability, quick facts (current study, focus, most recent role) |
-| **Highlights** | IEEE publication, patent application, hackathon win, top 2% merit scholarship |
+| **Highlights** | Two published papers (IEEE, Springer Nature), patent application, hackathon win, top 2% merit scholarship |
 | **Selected work** | Waitless, Document Intake Assistant, Cropify, Tieout, Auto Mailer Pro, MoneyMind AI, Kommunity, KnowBit, shown as stacking cards with live screenshots |
 | **More work** | WhatsApp Clinic Assistant, EduPredict AI, PlaceIQ, MediGist, Mequen Medisystem landing page |
 | **About** | Background and what I'm doing right now |
 | **Experience** | Internships and independent work as an expandable timeline |
-| **Recognition** | Publication, patent, hackathons, leadership, certifications |
+| **Recognition** | Publications, patent, hackathons, leadership, certifications |
 | **Toolbox** | Languages, frameworks, AI and automation tools, platforms |
 | **Contact** | Click-to-copy email, LinkedIn, GitHub, résumé |
 

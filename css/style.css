@@ -404,8 +404,13 @@ h1, h2, h3, p { margin: 0; }
 @media (max-width: 900px) {
   .hero__grid { grid-template-columns: 1fr; }
   .hero__visual { justify-content: flex-start; order: -1; }
-  .hero__photo { width: min(78%, 360px); margin-left: 14%; }
+  .hero__photo { width: min(70%, 360px); margin-left: 12%; }
   .hero { min-height: auto; }
+}
+@media (max-width: 560px) {
+  .hero__photo { margin-left: 8%; }
+  .hero__visual { gap: 12px; }
+  .hero__vertical { font-size: 11px; }
 }
 
 /* ============ Marquee ============ */
@@ -427,7 +432,7 @@ h1, h2, h3, p { margin: 0; }
 }
 .num { padding: 6px 24px 6px 0; border-left: 1px solid var(--line); padding-left: 22px; display: flex; flex-direction: column; gap: 14px; }
 .num:first-child { border-left: 0; padding-left: 0; }
-.num__value { white-space: nowrap; font-size: clamp(36px, 6vw, 88px); font-weight: 550; letter-spacing: -0.06em; line-height: 0.9; }
+.num__value { white-space: nowrap; font-size: clamp(34px, 5.2vw, 76px); font-weight: 550; letter-spacing: -0.06em; line-height: 0.9; }
 .num__value sup { font-size: 0.4em; letter-spacing: -0.02em; vertical-align: 0.9em; margin-left: 2px; color: var(--accent); }
 .num__label { font-size: 15px; line-height: 1.35; }
 .num__label small { color: var(--ink-3); font-size: 13px; }
@@ -460,7 +465,8 @@ section { position: relative; }
 /* ============ Work: stacked cards ============ */
 .stack { position: relative; display: flex; flex-direction: column; gap: 6vh; padding-bottom: 4vh; }
 .project {
-  --tab-x: calc(var(--i) * 148px);
+  /* Spread the tabs across the card, capped at 148px apart, so all 8 always fit. */
+  --tab-x: calc(var(--i) * min(148px, (100% - 150px) / 7));
   position: sticky;
   top: calc(var(--nav-h) + 20px + var(--i) * 10px);
   border-radius: 4px var(--radius) var(--radius) var(--radius);
@@ -483,6 +489,7 @@ section { position: relative; }
   clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
 .project__tab span { color: var(--card-accent); }
+@media (max-width: 1200px) { .project__tab { padding: 0 14px 0 12px; font-size: 10px; } }
 @media (max-width: 1020px) { .project { --tab-x: calc(mod(var(--i), 3) * 130px); } }
 @media (max-width: 560px) { .project { --tab-x: 0px; } }
 
@@ -680,6 +687,16 @@ section { position: relative; }
 .card:has(.card__list), .card:has(.chips), .card:has(.certs) { justify-content: flex-start; }
 .card--ink { background: var(--c-ink-bg); color: var(--c-ink-fg); border-color: transparent; }
 .card--ink .card__kicker { color: var(--accent); }
+.card--pubs { justify-content: flex-start; gap: 0; }
+.card--pubs .card__kicker { margin-bottom: 18px; }
+.pub { display: grid; gap: 10px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,0.12); }
+.pub:last-child { padding-bottom: 0; }
+.pub__venue { color: var(--c-ink-mute); }
+.pub .card__quote { font-size: clamp(20px, 2vw, 28px); transition: color 0.3s; }
+.pub:hover .card__quote { color: var(--accent); }
+.pub__note { color: var(--c-ink-mute); }
+.pub__note .arrow { display: inline-block; transition: transform 0.4s var(--ease); }
+.pub:hover .pub__note .arrow { transform: translate(3px, -3px); }
 .card--accent { background: var(--accent); color: #121211; border-color: transparent; }
 .card--accent .card__kicker { color: #121211; opacity: 0.75; }
 .card__kicker { color: var(--ink-3); }
